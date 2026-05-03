@@ -34,7 +34,7 @@ jobs:
           files: "build/libs/*.jar"
           prerelease: true
       - name: capture build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4   # 修复：v3 → v4
         with:
           name: Artifacts
           path: |
